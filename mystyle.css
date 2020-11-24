@@ -1,0 +1,31 @@
+:root{
+   --dark-color: #282e34;
+    --light-color: #f4f4f4; 
+}
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav{
+    background-color: #282e34;
+    width: 100%;
+  }
+
+  nav * {
+      color: #f4f4f4;
+      display: inline-block;
+  }
+  .logo {
+    width: 100px;
+    cursor: pointer;
+  }
