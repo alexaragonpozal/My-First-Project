@@ -1,31 +1,160 @@
-:root{
-   --dark-color: #282e34;
-    --light-color: #f4f4f4; 
+:root {
+  --dark-color: #282e34;
+  --light-color: #f4f4f4;
+  --medium-color: #5c5c5c;
 }
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
 
-  nav{
-    background-color: #282e34;
-    width: 100%;
-  }
+nav {
+  background-color: #282e34;
+  width: 100%;
+}
 
-  nav * {
-      color: #f4f4f4;
-      display: inline-block;
-  }
-  .logo {
-    width: 100px;
-    cursor: pointer;
-  }
+nav * {
+  color: #f4f4f4;
+  display: inline-block;
+}
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+nav a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+section {
+  text-align: center;
+}
+
+#key-attributes {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.about {
+  width: 100%;
+  padding: 50px;
+  background-image: url(./c151661e-f60a-4c76-8736-7ec8a467e086.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-color: rgb(78, 78, 78);
+  background-blend-mode: multiply;
+  margin: 0;
+  color: #f4f4f4;
+}
+
+button{
+  color: var(--light-color);
+  background-color: var(--medium-color);
+  border: var(--dark-color);
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+button a:visited{
+  color: var(--light-color);
+}
+
+#card1 {
+  height: 500px;
+  width: 33%;
+  padding: 50px;
+  background-image: url(./exploded_mockup.png);
+  background-size: cover;
+  background-position: 50%;
+  background-color: rgb(78, 78, 78);
+  background-blend-mode: multiply;
+  margin: 0;
+  text-align: right;
+  color: #f4f4f4;
+}
+#card2 {
+  height: 500px;
+  width: 33%;
+  padding: 50px;
+  background-image: url(./Disrupt.png);
+  background-size: cover;
+  background-position: 50%;
+  background-color: rgb(78, 78, 78);
+  background-blend-mode: multiply;
+  margin: 0;
+  text-align: right;
+  color: #f4f4f4;
+}
+#card3 {
+  height: 500px;
+  width: 33%;
+  padding: 50px;
+  background-image: url(./Iphone\ Mockup\ ECI\ 2.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-color: rgb(78, 78, 78);
+  background-blend-mode: multiply;
+  margin: 0;
+  text-align: right;
+  color: #f4f4f4;
+}
+#Projects{
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+#linkedin{
+  width: 20px;
+}
+
+#instagram{
+  width: 20px;
+}
+
+footer{
+  display: inline-block;
+  width: 100%;
+}
+
+#Contact h2{
+  margin: auto;
+}
+
+#Contact{
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+#Contact p{
+  margin-top: 30px;
+  margin-bottom: 0;
+padding-bottom: 20px;
+}
+
+.projectpreview{
+  display: flex;
+}
+
+header{
+  display: flex;
+}

@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel=“stylesheet” href="mystyle.css">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
     <title>Tomás Aragão UX/UI</title>
 </head>
 
 <body>
-    
+
     <header>
         <nav>
         <img class="logo" src="./TA logo.png" alt="Tomás Aragão Logo">
         <h1>Tomás Aragão</h1>
-        <h3>Digital Creative Solutions for you</h3>
+        <h5>Digital Creative Solutions for you</h5>
             <ul>
                 <li> <a href="#AboutMe">About Me</a></li>
                 <li> <a href="#Projects">Projects</a></li>
@@ -20,33 +22,35 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
+        <section class="about">
+
             <h2>About Me</h2>
             <h3>A hopeless daydreamer finds sense in the world through his art</h3>
 
             <p>My name is Tomás and I am a UX/UI designer. Having recently graduated from Ironhack Tech Bootcamp in Lisbon, I was introduced to the world of user-centered design in an immersive experience, having acquired knowledge over the course of seven different projects and over 350 hours.<p/>
-            <p><span class="key-attributes"> <strong>User Research, User Experience and User Interface</strong> </p>
-            <p>were the main focus of the Bootcamp, having provided the necessary tools for any job in the industry</span></p>
-            <p><a href="#Contact">Contact me and get to know me better!</a></p>
-            <img id="About" src="./c151661e-f60a-4c76-8736-7ec8a467e086.jpg" alt="">
+            <p id="key-attributes"> User Research, User Experience and User Interface</p>
+            <p>were the main focus of the Bootcamp, having provided the necessary tools for any job in the industry</p>
+            <button><a href="#Contact">Let's Talk</a> </button>
+        
             
-
         </section>
         
         <section id="Projects">
 
-            <h2>Projects</h2>
+         <h2>Projects</h2>
+         <div class="projectpreview">
 
-            <div class="card">
+            <div id="card1">
                 <h3>Mind Bites</h3>
                 <p>
                     An app developed for users who tend to eat emotionally during periods of stress and anxiety!
                 </p>
-                <button>Know more</button>
+                <button></a> Know more</button>
             </div>
 
-            <div class="card">
+            <div id="card2">
                 <h3>Disrupt Magazine</h3>
                 <p>
                     An editorial magazine for culture junkies who want to read straight-to-the-point news and know what's going on around them
@@ -54,17 +58,22 @@
                 <button>Know more</button>
             </div>
 
-            <div class="card">
+            <div id="card3">
                 <h3>Add a feature: El Corte Inglés Supermercado</h3>
                 <p>
                     A challenge focused on mimicking the <strong>El Corte Inglés Supermarket App UI</strong> and how I added in a sustainability and recycling educational feature
                 </p>
                 <button>Know more</button>
             </div>
+
+            </div>
         </section>
 
         <section id="Contact">
-            <h4>Let's get in touch. Contact me</h4>
+            <div id="contacttitles">
+             <h2>Let's get in touch.</h2>
+             <h2>Contact me</h2>
+            </div>
 
             <p>Let's know each other better! Let me know if you have any questions about my work or myself. </p>
 
@@ -96,12 +105,16 @@
             <p>or send me an <a href="mailto:tomasadmota@gmail.com">e-mail</a> directly for urgent matters</p>
         </section>
         <footer>
+            <nav>
             <ul>
                 <li><a href="#AboutMe">About Me</a></li>
                 <li><a href="#Projects">Projects</a></li>
             </ul>
-            <img src="./linkedin.png" alt="linkedin profile link">
-            <img src="./instagram.png" alt="instagram profile link">
+            <div class="socialmedia">
+             <img id="linkedin" src="./linkedin.png" alt="linkedin profile link">
+             <img id="instagram" src="./instagram.png" alt="instagram profile link">
+           </div>
+        </nav>
         </footer>
 
     </main>
