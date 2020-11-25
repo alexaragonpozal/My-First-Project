@@ -81,7 +81,7 @@ button a:visited{
 
 #card1 {
   height: 500px;
-  width: 33%;
+  width: 33.33%;
   padding: 50px;
   background-image: url(./exploded_mockup.png);
   background-size: cover;
@@ -94,7 +94,7 @@ button a:visited{
 }
 #card2 {
   height: 500px;
-  width: 33%;
+  width: 33.33%;
   padding: 50px;
   background-image: url(./Disrupt.png);
   background-size: cover;
@@ -107,7 +107,7 @@ button a:visited{
 }
 #card3 {
   height: 500px;
-  width: 33%;
+  width: 33.33%;
   padding: 50px;
   background-image: url(./Iphone\ Mockup\ ECI\ 2.jpg);
   background-size: cover;
@@ -143,6 +143,7 @@ footer{
 #Contact{
   background-color: var(--dark-color);
   color: var(--light-color);
+  padding: 30px 0;
 }
 
 #Contact p{
