@@ -17,16 +17,25 @@ body {
   margin: 0;
   padding: 0;
 }
+header h1{
+  margin-bottom: 10px;
+}
+header h5{
+  margin-top: 10px;
+}
 
 nav {
   background-color: #282e34;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav * {
   color: #f4f4f4;
-  display: inline-block;
 }
+
 .logo {
   width: 100px;
   cursor: pointer;
@@ -43,6 +52,7 @@ section {
 #key-attributes {
   font-weight: bold;
   font-size: 40px;
+  margin: 50px 0;
 }
 
 h2 {
@@ -50,7 +60,7 @@ h2 {
   text-align: center;
   margin-left: 30px;
   margin-top: 0;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .about {
@@ -75,52 +85,23 @@ button{
   font-weight: lighter;
 }
 
+
 button a:visited{
   color: var(--light-color);
 }
 
-#card1 {
-  height: 500px;
-  width: 33.33%;
-  padding: 50px;
-  background-image: url(./exploded_mockup.png);
-  background-size: cover;
-  background-position: 50%;
-  background-color: rgb(78, 78, 78);
-  background-blend-mode: multiply;
-  margin: 0;
-  text-align: right;
-  color: #f4f4f4;
+#Projects button{
+  width: 150px;
 }
-#card2 {
-  height: 500px;
-  width: 33.33%;
-  padding: 50px;
-  background-image: url(./Disrupt.png);
-  background-size: cover;
-  background-position: 50%;
-  background-color: rgb(78, 78, 78);
-  background-blend-mode: multiply;
-  margin: 0;
-  text-align: right;
-  color: #f4f4f4;
-}
-#card3 {
-  height: 500px;
-  width: 33.33%;
-  padding: 50px;
-  background-image: url(./Iphone\ Mockup\ ECI\ 2.jpg);
-  background-size: cover;
-  background-position: 50%;
-  background-color: rgb(78, 78, 78);
-  background-blend-mode: multiply;
-  margin: 0;
-  text-align: right;
-  color: #f4f4f4;
-}
+
 #Projects{
   background-color: var(--light-color);
   color: var(--dark-color);
+
+}
+
+#Projects h3{
+  align-self: flex-start;
 }
 
 #linkedin{
@@ -132,9 +113,19 @@ button a:visited{
 }
 
 footer{
-  display: inline-block;
+  background-color: var(--dark-color);
+  display: flex;
   width: 100%;
+  justify-content: space-between;
+  color:var(--light-color);
+  list-style: none;
+  align-items: center;
 }
+
+footer a{
+  color: var(--light-color);
+}
+
 
 #Contact h2{
   margin: auto;
@@ -154,8 +145,121 @@ padding-bottom: 20px;
 
 .projectpreview{
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-header{
+@media only screen and (max-width: 900px) {
+  .projectpreview {
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+}
+
+.card {
+  height: 300px;
+  flex: 0 0 33.33%;
+  padding: 50px;
+  background-size: cover;
+  background-position: 50%;
+  background-color: rgb(78, 78, 78);
+  background-blend-mode: multiply;
+  margin: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4f4;
+}
+
+.projectpreview >div:hover{
+  background-color: rgb(92, 92, 92);
+  background-blend-mode: multiply;
+  }
+
+#card1 {
+  background-image: url(./exploded_mockup.png);
+}
+#card2 {
+  background-image: url(./Disrupt.png);
+}
+#card3 {
+  background-image: url(./Iphone\ Mockup\ ECI\ 2.jpg);
+}
+
+header ul{
+  display: flex;
+  list-style: none;
+  margin-right: 40px;
+}
+
+#branding{
   display: flex;
 }
+
+#titlesub{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+  justify-content: center;
+}
+
+footer ul{
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.socialmedia{
+  width: 100px;
+  display:flex;
+  justify-content: space-around;
+}
+
+#instagram{
+  margin-right: 40px;
+}
+
+.socialmedia img { 
+  height: 20px;
+}
+
+a{
+  color:var(--light-color);
+}
+
+
+.about p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about button{
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 750px){
+  nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  #instagram{
+    margin: 0;
+  }
+  footer ul{
+    padding: 0;
+  }
+}
+
